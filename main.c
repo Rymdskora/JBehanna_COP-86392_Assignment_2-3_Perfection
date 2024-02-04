@@ -11,13 +11,11 @@ int main(void) {
   for (i = 1; i < number; i++) {
     if (number % i == 0) {
       numberList[arrayPosition] = i;
+      total += i;
       arrayPosition++;
     }
   }
 
-  for (i = 0; i < arrayPosition; i++) {
-    total += numberList[i];
-  }
 
   if (total == number) {
     printf("Input: %d\n\nPerfect Number.", number);
